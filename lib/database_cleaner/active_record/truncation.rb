@@ -213,7 +213,7 @@ module DatabaseCleaner::ActiveRecord
 
     # overwritten
     def migration_storage_names
-      [::ActiveRecord::Migrator.schema_migrations_table_name]
+      [::ActiveRecord::SchemaMigration.table_name]
     end
 
     def cache_tables?
